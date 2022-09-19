@@ -4,6 +4,12 @@ type Props = {
   children: JSX.Element[] | JSX.Element | string;
   [x: string]: any;
 };
+
+/**
+ *
+ * @param param0 button content
+ * @returns custom button with gradient bg-color
+ */
 const CustomButtonPrimary: React.FC<Props> = ({ children, ...props }) => {
   return (
     <Button

@@ -1,13 +1,10 @@
-import { Button } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import SetUpModal from "../components/SetUpModal";
-// import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>CHRONIFI-Setup</title>
         <meta

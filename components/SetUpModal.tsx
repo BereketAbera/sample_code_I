@@ -21,9 +21,18 @@ import { AddIcon, ChevronLeftIcon, LockIcon } from "@chakra-ui/icons";
 import CustomButtonSecondary from "./CustomButtonSecondary";
 import CustomButtonPrimary from "./CustomButtonPrimary";
 
+/**
+ *
+ * @returns setup modal jsx with all it's logic.
+ */
 const SetUpModal: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure({ defaultIsOpen: true });
 
+  /**
+   *
+   * @param activeIndex is the index of the dot to be shown as active
+   * @returns array of dots to show the current user stage
+   */
   const renderPageDots = (activeIndex: Number) => {
     return [1, 2, 3, 4].map((value) => {
       let common = {
